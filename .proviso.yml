@@ -1,4 +1,7 @@
 fetcher_config:
   name: awesome
-
-
+  config:
+    environment.remote: dev
+    info_fetcher.class: 'FetcherServices\InfoFetcher\FetcherServices'
+    info_fetcher.config:
+      host: 'https://extranet.zivtech.com'
