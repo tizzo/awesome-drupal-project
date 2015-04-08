@@ -1,3 +1,4 @@
+image: lepew/ubuntu-14.04-lamp
 fetcher_config:
   name: awesome
   config:
