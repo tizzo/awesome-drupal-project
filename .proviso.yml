@@ -1,8 +1,17 @@
 image: lepew/ubuntu-14.04-lamp
+# Eventual TODO
+# provisioner: bash
+# bash_config:
+#   command: drush site-install minimal
+# Eventual TODO
+# provisioner: drush
+# drush_config:
+#    profile: minimal
+provisioner: fetcher
 fetcher_config:
+  # Any option from https://github.com/tizzo/fetcher/blob/7.x-1.x/KEYS.txt is valid here.
   name: awesome
-  config:
-    environment.remote: dev
-    info_fetcher.class: 'FetcherServices\InfoFetcher\FetcherServices'
-    info_fetcher.config:
-      host: 'https://extranet.zivtech.com'
+  environment.remote: dev
+  info_fetcher.class: 'FetcherServices\InfoFetcher\FetcherServices'
+  info_fetcher.config:
+    host: 'https://extranet.zivtech.com'
