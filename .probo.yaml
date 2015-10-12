@@ -1,8 +1,4 @@
 image: 'proboci/ubuntu-14.04-lamp'
 steps:
-  - name: Print shit
-    command: echo 'WAT?!'
-# - name: Provision
-#   plugin: drupal
-#   install: true
-#   profile: default
+  - name: Provision Drupal
+    plugin: drupal
