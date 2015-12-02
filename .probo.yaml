@@ -1,4 +1,4 @@
-image: 'proboci/ubuntu-14.04-lamp-beta'
+#image: 'proboci/ubuntu-14.04-lamp-beta'
 steps:
   - name: Provision Drupal
     plugin: Drupal
