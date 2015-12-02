@@ -1,0 +1,8 @@
+image: 'proboci/ubuntu-14.04-lamp-beta'
+steps:
+  - name: Provision Drupal
+    plugin: Drupal
+    runInstall: standard
+  - name: Check PWD
+    command: 'pwd'
+
