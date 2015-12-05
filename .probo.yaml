@@ -4,5 +4,5 @@ steps:
     plugin: Drupal
     runInstall: standard
   - name: Check PWD
-    command: 'pwd'
+    command: 'echo `pwd`'
 
