@@ -5,5 +5,3 @@ steps:
     runInstall: standard
   - name: Check PWD
     command: 'echo `pwd`'
-
-
