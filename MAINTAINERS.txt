@@ -313,4 +313,6 @@ Seven theme
 Stark theme
 - John Albin Wilkins 'JohnAlbin' http://drupal.org/user/32095
 
+The Awesome Stuff
+- Howard Tyson 'tizzo'
 
