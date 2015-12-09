@@ -19,7 +19,7 @@ Component maintainers
 
 The Drupal Core component maintainers oversee the development of Drupal
 subsystems. See http://drupal.org/contribute/core-maintainers for more
-information on their responsibilities, and to find out how to become a component
+information on their responsibilities, and to find out how to become a componentwtf
 maintainer. Current component maintainers for Drupal 7:
 
 Ajax system
