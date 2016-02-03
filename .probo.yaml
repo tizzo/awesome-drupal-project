@@ -4,4 +4,6 @@ steps:
     plugin: Drupal
     runInstall: standard
     settingsRequireFile: 'site-settings.php'
+    settingsAppend: |
+  $bar = 'baz';
 
