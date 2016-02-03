@@ -3,4 +3,5 @@ steps:
   - name: Provision Drupal
     plugin: Drupal
     runInstall: standard
+    settingsRequireFile: 'site-settings.php'
 
