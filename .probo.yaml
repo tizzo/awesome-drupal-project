@@ -6,4 +6,4 @@ steps:
     settingsRequireFile: 'site-settings.php'
     settingsAppend: |
   $bar = 'baz';
-
+  $foo = 'stuff';
