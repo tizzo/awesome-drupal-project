@@ -1,10 +1,6 @@
 #image: 'proboci/ubuntu-14.04-lamp-beta'
-assets:
-  - item_one
 steps:
   - name: Provision Drupal
     plugin: Drupal
     runInstall: standard
-  - name: Asset contents
-    command: 'cat $ASSET_DIR/testing'
 
