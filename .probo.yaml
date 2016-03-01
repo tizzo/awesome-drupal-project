@@ -3,4 +3,4 @@ steps:
   - name: Make directory
     command: mkdir /var/www/html
   - name: Write file
-    commane: echo '<h1>Hello World!</h1>' > /var/www/html/index.html ; chown -R 777 /var/www/html
+    commane: "echo '<h1>Hello World!</h1>' > /var/www/html/index.html && chown -R 777 /var/www/html"
