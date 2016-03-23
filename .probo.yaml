@@ -7,3 +7,5 @@ steps:
     settingsAppend: |
       $bar = 'baz';
       $foo = 'stuff';
+  - name: Second step
+    command: env
