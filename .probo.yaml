@@ -1,6 +1,9 @@
 #image: 'proboci/ubuntu-14.04-lamp-beta'
 steps:
-  - name: Make directory
-    command: mkdir /var/www/html
-  - name: Write file
-    commane: "echo '<h1>Hello World!</h1>' > /var/www/html/index.html && chown -R 777 /var/www/html"
+  - name: Provision Drupal
+    plugin: Drupal
+    runInstall: standard
+    settingsRequireFile: 'site-settings.php'
+    settingsAppend: |
+  $bar = 'baz';
+  $foo = 'stuff';
