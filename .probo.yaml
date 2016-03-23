@@ -5,5 +5,5 @@ steps:
     runInstall: standard
     settingsRequireFile: 'site-settings.php'
     settingsAppend: |
-  $bar = 'baz';
-  $foo = 'stuff';
+      $bar = 'baz';
+      $foo = 'stuff';
