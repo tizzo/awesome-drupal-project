@@ -1,11 +1,11 @@
 #image: 'proboci/ubuntu-14.04-lamp-beta'
 steps:
-  - name: Provision Drupal
-    plugin: Drupal
-    runInstall: standard
-    settingsRequireFile: 'site-settings.php'
-    settingsAppend: |
-      $bar = 'baz';
-      $foo = 'stuff';
+# - name: Provision Drupal
+#   plugin: Drupal
+#   runInstall: standard
+#   settingsRequireFile: 'site-settings.php'
+#   settingsAppend: |
+#     $bar = 'baz';
+#     $foo = 'stuff';
   - name: Second step
-    command: env
+    command: printf '\033[0;31m [This should be red] \033[0m [This should not]'
