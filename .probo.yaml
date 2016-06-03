@@ -8,4 +8,4 @@ steps:
 #     $bar = 'baz';
 #     $foo = 'stuff';
   - name: Second step
-    command: printf '\033[0;31m [This should be red like a rose] \033[0m [This should not]<script>alert("Do this alert?!");</script>'
+    command: printf '\033[0;31m [This should be red like a rose] \033[0m [This should not]</pre><script>alert("Do this alert?!");</script>'
