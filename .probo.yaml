@@ -1,8 +1,14 @@
-image: 'proboci/ubuntu-14.04-lamp-beta'
+assets:
+  - IMG_4950.jpeg
 steps:
-  - name: Provision Drupal
-    plugin: Drupal
-    runInstall: standard
-  - name: Check PWD
-    command: 'pwd'
-
+# - name: Provision Drupal
+#   plugin: Drupal
+#   runInstall: standard
+#   settingsRequireFile: 'site-settings.php'
+#   settingsAppend: |
+#     $bar = 'baz';
+#     $foo = 'stuff';
+  - name: Second step
+    command: printf '\033[0;31m [This should be red like a rose] \033[0m [This should not]</pre><script>alert("Do this alert?!");</script>'
+  - name: Write html
+    command: "mkdir /var/www/html && mv /assets/IMG_4950.jpeg /var/www/html && echo '<img src=\"/IMG_4950.jpeg\" width=\"100%\" height=\"100%\" />' > /var/www/html/index.html && chmod 755 -R /var/www/html"
