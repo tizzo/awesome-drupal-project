@@ -1,11 +1,3 @@
-#image: 'proboci/ubuntu-14.04-lamp-beta'
 steps:
-# - name: Provision Drupal
-#   plugin: Drupal
-#   runInstall: standard
-#   settingsRequireFile: 'site-settings.php'
-#   settingsAppend: |
-#     $bar = 'baz';
-#     $foo = 'stuff';
-  - name: Second step
-    command: printf '\033[0;31m [This should be red like a rose] \033[0m [This should not]</pre><script>alert("Do this alert?!");</script><pre><h1>TEST THIS</h1>'
+  - name: Test Step
+    command: printf '\033[0;31m [This should be red like a rose] \033[0m [This should not]</pre><script>alert("Do this alert?!");</script><h1>Here is a title</h1><pre>'
