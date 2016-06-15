@@ -1,8 +1,8 @@
-image: 'proboci/ubuntu-14.04-lamp-beta'
 steps:
-  - name: Provision Drupal
-    plugin: Drupal
-    runInstall: standard
-  - name: Check PWD
-    command: 'pwd'
-
+  - name: Sleep and setup a docroot
+    plugin: Script
+    script: |
+      sleep 15
+      mkdir -p /var/www/html
+      echo '<h1>This is a build</h1>' > /var/www/html/index.html
+      chmod 777 -R /var/www
