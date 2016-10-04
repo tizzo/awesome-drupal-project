@@ -1,0 +1,8 @@
+steps:
+  - name: Sleep and setup a docroot
+    plugin: Script
+    script: |
+      sleep 1
+      mkdir -p /var/www/html
+      echo '<h1>This is a build</h1>' > /var/www/html/index.html
+      chmod 777 -R /var/www
