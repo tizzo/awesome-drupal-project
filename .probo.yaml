@@ -9,3 +9,6 @@ steps:
       sleep 6
 notifications:
   webhook: http://localhost:6666
+basicAuth:
+  username: foo
+  password: 123
