@@ -6,12 +6,11 @@ steps:
       mkdir -p /var/www/html
       echo '<h1>This is a build</h1>' > /var/www/html/index.html
       chmod 777 -R /var/www
-      sleep 6
   - name: Modify max packet size
     plugin: Script
     script: |
-      echo "[mysqld]\nmax_allowed_packet=16M " > /etc/mysql/my.cnf
-      service mysqld restart
+      echo -e "[mysqld]\nmax_allowed_packet=16M " > /etc/mysql/my.cnf
+      service mysql restart
 notifications:
   webhook: http://localhost:6666
 basicAuth:
