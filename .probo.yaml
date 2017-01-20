@@ -1,18 +1,11 @@
+image: php7_flat
 allowAccessWhileBuilding: true
 steps:
   - name: Sleep and setup a docroot
     plugin: Script
     script: |
       mkdir -p /var/www/html
-      echo '<h1>This is a build</h1>' > /var/www/html/index.html
+      echo '<?php print phpinfo();' > /var/www/html/index.php
       chmod 777 -R /var/www
-  - name: Modify max packet size
-    plugin: Script
-    script: |
-      echo -e "[mysqld]\nmax_allowed_packet=16M " > /etc/mysql/my.cnf
-      service mysql restart
 notifications:
   webhook: http://localhost:6666
-basicAuth:
-  username: foo
-  password: 123
