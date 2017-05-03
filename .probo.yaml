@@ -6,5 +6,6 @@ steps:
       mkdir -p /var/www/html
       echo '<?php print phpinfo();' > /var/www/html/index.php 
       chmod 777 -R /var/www
+
 notifications:
   webhook: http://localhost:6666
