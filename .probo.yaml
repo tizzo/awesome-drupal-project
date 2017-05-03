@@ -1,5 +1,4 @@
-image: php7_flat
-allowAccessWhileBuilding: true
+
 steps:
   - name: Sleep and setup a docroot
     plugin: Script
