@@ -1,3 +1,4 @@
+image: 'proboci/amazee:php70-basic'
 steps:
   - name: Sleep and setup a docroot
     plugin: Script
